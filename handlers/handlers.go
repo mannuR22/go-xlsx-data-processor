@@ -88,6 +88,7 @@ func HoursBetweenShiftEmployeesList(nameToRecordsMap map[string][]models.Record,
 
 		//array of custom type Record to store shifts belongs to same day
 		shifts := []models.Record{}
+		var isFound bool = false
 
 		//iterating over each records belongs to unique employee
 		for _, record := range records {
@@ -99,7 +100,7 @@ func HoursBetweenShiftEmployeesList(nameToRecordsMap map[string][]models.Record,
 			} else {
 
 				//analyzing shift array if there is change in date of current shift.
-				var isFound bool = false
+
 				for i := 1; i < len(shifts); i++ {
 					difference := int(shifts[i].TimeIn.Sub(shifts[i-1].TimeOut).Hours())
 					if difference > minHour && difference < maxHour {
@@ -121,8 +122,8 @@ func HoursBetweenShiftEmployeesList(nameToRecordsMap map[string][]models.Record,
 			}
 		}
 
-		//For handling edge case
-		for i := 1; i < len(shifts); i++ {
+		//For handling edge case i.e., when few shifts from End of Records fall under same day
+		for i := 1; !isFound && i < len(shifts); i++ {
 			difference := int(shifts[i].TimeIn.Sub(shifts[i-1].TimeOut).Hours())
 			if difference > minHour && difference < maxHour {
 				reqRecords = append(reqRecords, models.RecordOUT{
