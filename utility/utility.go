@@ -120,7 +120,7 @@ func GetDate(t time.Time) time.Time {
 }
 
 func PrintInfo(q string, records []models.RecordOUT) {
-	//General Method for printing Employee Info
+	//Method for printing Employees Info
 	fmt.Println("\n\nQ:", q)
 	for indx, record := range records {
 
@@ -136,6 +136,7 @@ func removeSpaces(input string) string {
 }
 
 func excelNumberToDate(s string) (time.Time, error) {
+	//parsing string to float type
 	serialDate, err := strconv.ParseFloat(s, 64)
 	if err != nil {
 		fmt.Println("Error in utility:excelNumberToDate() while parsing to float.")
@@ -151,6 +152,7 @@ func excelNumberToDate(s string) (time.Time, error) {
 }
 
 func excelNumberToTime(s string) (time.Time, error) {
+	//parsing string to float type
 	serialNumber, err := strconv.ParseFloat(s, 64)
 	if err != nil {
 		fmt.Println("Error in utility:excelNumberToTime() while parsing to float.")
