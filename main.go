@@ -9,8 +9,10 @@ import (
 )
 
 func main() {
+
 	//NOTE: In Go lang there is concept of SLICE instead of array which is more powerful alternative to array, however it functions similar to array
 	// where ever i have stated array it actually means SLICE for increasing understandability of go developer
+	fmt.Println("Program Execution Started")
 
 	var filePathToXLSX string = "./Assignment_Timecard.xlsx" /* path to xlsx file from root of project directory*/
 	// Opening a file for writing. in case file doesn't exist ---> it creates new, otherwise ----> truncate existing file)
@@ -50,4 +52,6 @@ func main() {
 
 	//changing standard output back to console
 	os.Stdout = os.NewFile(0, "/dev/stdout")
+
+	fmt.Println("Program Execution Ended")
 }

@@ -2,7 +2,7 @@ package models
 
 import "time"
 
-// Custom type structure for storing Time Hour Card column / TimeHours Filed for Record Struct
+// Custom type structure for storing Time Hour Card column / TimeHours Field for Record Struct
 type TimeHoursIN struct {
 	Hour   int
 	Minute int
