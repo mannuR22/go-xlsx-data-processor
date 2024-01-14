@@ -1,0 +1,53 @@
+
+
+Q: Who has Worked for 7 consecutive days?
+
+S.No: 1
+Employee-Name: CEreira Jr, JEse
+Position-ID: WFS000456
+
+S.No: 2
+Employee-Name: GAeWdia, JAaW CarXEs
+Position-ID: WFS000473
+
+S.No: 3
+Employee-Name: Sparks, KeWWeMh
+Position-ID: WFS000101
+
+S.No: 4
+Employee-Name: SiWgh, JaspreeM
+Position-ID: WFS000424
+
+
+Q: Who have less than 10 hours of time between shifts, but greater than 1 hour?
+
+S.No: 1
+Employee-Name: HaCiXMEW, DeaWMe DevEW
+Position-ID: WFS000536
+
+S.No: 2
+Employee-Name: De Xa Cerda, IgWaciE
+Position-ID: WFS000318
+
+S.No: 3
+Employee-Name: DeXgadiXXE REdarMe, ChrisMiaW S
+Position-ID: WFS000523
+
+S.No: 4
+Employee-Name: CEreira Jr, JEse
+Position-ID: WFS000456
+
+S.No: 5
+Employee-Name: CaMaXaWE, CeghaW
+Position-ID: WFS000153
+
+S.No: 6
+Employee-Name: Xee, XaCar
+Position-ID: WFS000200
+
+
+Q: Who has Worked for more than 14hours in a single shift?
+
+S.No: 1
+Employee-Name: DeXgadiXXE REdarMe, ChrisMiaW S
+Position-ID: WFS000523

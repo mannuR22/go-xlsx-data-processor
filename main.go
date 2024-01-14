@@ -19,7 +19,7 @@ func main() {
 	defer outputFile.Close()
 
 	//Redirecting standard output to the outputFile
-	// os.Stdout = outputFile
+	os.Stdout = outputFile
 
 	//getting Map for (EmployeeName + FileNumber + PositionID) -> array of all records of same Employee
 	employeeToRecordsMap, err := utility.GetInfoMapFromXLSX("./Assignment_Timecard.xlsx")
